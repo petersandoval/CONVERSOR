@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <title>Conversor de monedas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+        <div class="container mt-4 p-0">
+            <div class="h1 text-uppercase text-center">conversor de monedas</div>
+        <label for="monto" class="fs-4">Escribe el monto</label>
+        <input class="form-control form-control-lg" type="number" id="monto" placeholder="escribe el monto">
+        <label for="primero" class="fs-4">Elige la moneda que quieres convertir</label>
+        <select class="container-fluid form-select form-select-lg my-3" id="primero">
+          </select>
+          <label for="segundo" class="fs-4">Elige la moneda a la que quieres convertir</label>
+        <select class="container-fluid form-select form-select-lg my-3" id="segundo">
+          </select>
+          <button class="btn btn-success convertir">Convertir</button>
+          <p class="fs-4 text-danger error"></p>
+          <p class="fs-3" id="result"></p>
+          <div class="d-flex justify-content-center d-none loader">  
+              <img src="images/loader.gif" style="width: 70px;" alt="cargando...">
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
